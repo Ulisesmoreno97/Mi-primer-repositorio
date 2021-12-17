@@ -125,21 +125,6 @@ h1+p{
 
 
 
-section figure {
-    
-    display: flex;
-    flex-flow:wrap;
-    padding: 5px;
-       
-}
-
-section figure figcaption {
-  width: 75%;
-  background-color: #222;
-  color: #fff;
-  font: italic smaller sans-serif;
-  text-align: center;
-}
 
 /*           Reservas-Turnero         */
 
