@@ -1,0 +1,186 @@
+/*  Reset inicial  */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {
+    background-color: #f8ccbc;
+     /* Margin bottom by footer height */
+     margin-bottom: 60px;
+}
+
+    /*      Nav      */
+
+    nav {
+        
+        a{
+            
+            &:hover {
+            background-color: rgb(167, 121, 141);
+            color: #272727;
+            }
+        }
+
+        .backColor {
+            background-color: #3026222c !important;
+
+        }
+    }
+
+
+    /*      Footer      */
+
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+
+   
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background-color: #3026222c;
+    }
+
+    a.nav-link.active {
+        color: #000000;
+
+    }
+
+
+
+
+
+
+
+/*          Index            */
+
+.indexBeuty {
+    grid-area: cuerpo;
+    text-align: center;
+
+}
+
+h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80px;
+    animation: fadeIn 2s;
+}
+
+h1+p {
+    animation: slideIn 1.7s;
+
+
+}
+
+a.nav-link.active.servicios-link {
+    color: #ffffff;
+}
+
+
+
+/*        Servicios         */
+
+/* .no-margen {
+    margin-right: 0;
+    margin-left: 0;
+} */
+
+.no-padd {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+
+/* .responsive {
+    width: 100%;
+    height: auto;
+}
+*/
+.imagenAgrandada:hover {
+    box-shadow: 0px 0px 15px white;
+    z-index: 1001;
+}
+
+.imagenAgrandada {
+    z-index: 1000;
+    position: relative;
+    transition: all 0.25s;
+}
+
+
+/*           Nosotros          */
+
+
+
+
+/*           Reservas-Turnero         */
+
+.imgResponsive {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/*           media queries       */
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        padding-top: 0px;
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+
+    h1+p {
+        font-weight: bold;
+        color: #d99ff7;
+
+    }
+
+    header nav a {
+        text-decoration: none;
+        color: #272727;
+        margin-left: 5px;
+
+    }
+
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        position: relative;
+        margin-left: -150vw;
+    }
+
+    50% {
+        position: relative;
+        margin-left: -150vw;
+    }
+
+    100% {
+        position: relative;
+        margin-left: initial;
+    }
+}
