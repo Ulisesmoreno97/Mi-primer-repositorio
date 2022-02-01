@@ -53,14 +53,13 @@ a.nav-link.active {
 
 /*          Index            */
 .indexBeuty {
-  grid-area: cuerpo;
   text-align: center; }
 
 h1 {
   font-family: 'Times New Roman', Times, serif;
   padding-top: 20px;
   text-align: center;
-  font-size: 80px; }
+  font-size: 50px; }
 
 h1 + p {
   animation: slideIn 1.7s; }

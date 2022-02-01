@@ -96,13 +96,13 @@ body {
 /*          Index            */
 
 .indexBeuty {
-    grid-area: cuerpo;
+    
     text-align: center;
 
 }
 
 h1 {
-    @include fuente1(20px, center, 80px)
+    @include fuente1(20px, center, 50px)
 }
 
 h1+p {
