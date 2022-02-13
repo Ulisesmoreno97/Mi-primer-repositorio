@@ -20,9 +20,16 @@ $paletaColores: ("transparencia": #3026222c, "fondo":#f8ccbc);
 
 
 body {
-    background-color: map-get($map: $paletaColores, $key:fondo);
+    background-image: url(/fotos/Fondo1.jpg);
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    
      /* Margin bottom by footer height */
      margin-bottom: 60px;
+     
 }
     /*      Nav      */
 
@@ -48,9 +55,9 @@ body {
     .separador{
         @include fuente1(20,center,80px);
         background-color: #3026222c;       
-        padding: 12px;
-        margin-top: 4px;
-        margin-bottom: 4px;
+        padding: 50px;
+        
+
     }
 
     .textoEnFoto{
@@ -77,8 +84,8 @@ body {
     .footer {
         position: absolute;
         bottom: 0;
-        width: 100%;
-        height: 50px;
+        
+        
         @extend .backColor;
     }
 
@@ -105,6 +112,8 @@ h1 {
     @include fuente1(20px, center, 50px)
 }
 
+
+
 h1+p {
     animation: slideIn 1.7s;
 
@@ -115,6 +124,31 @@ a.nav-link.active.servicios-link {
     color: #ffffff;
 }
 
+
+
+// Conocenos  
+
+.separadorConocenos {
+    
+    // background-color: #3026222c;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: auto;
+    a{
+        display:block;
+        @include fuente1(20, center, 30px);
+    }
+
+
+}
+
+.botonConocenos{
+border-radius: 50px;
+background-color: #c89c8c;
+color: #fff;
+border-color: #c89c8c;
+
+}
 
 
 /*        Hover sobre fotos        */
@@ -168,6 +202,7 @@ a.nav-link.active.servicios-link {
 
 .botonTurnos{
     padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .botonTurnos1{
@@ -176,6 +211,9 @@ a.nav-link.active.servicios-link {
     color: #fff;
     border-color: #c89c8c;
 }
+
+
+
 
   /*           Preguntas lado izquierdo     */
 
@@ -216,6 +254,68 @@ a.nav-link.active.servicios-link {
 }
 
 
+/*           Mapa     */
+.textoMap{
+    margin: 5%;
+}
+
+.textoMapIzquierda{
+    position: relative;
+    text-align: end;
+    align-content: center;
+    
+}
+
+
+
+
+.textoMapDerecha{
+    position: relative;
+    text-align: start;
+    align-content: center;
+}
+
+.textoMapDerecha div h5{
+     position: relative;
+     text-align: start;
+     align-content: center;
+     margin: 0%;
+     padding: 0%;
+}
+
+
+.mapaSection{
+    
+    margin: auto;
+    max-height: 350px;
+    margin-bottom: 50px;
+}
+.mapaSection iframe{
+    margin-top: 50px;
+    
+    
+     max-height: 350px;
+}
+
+.mapaDistancia{
+    margin-bottom: 3%;
+}
+
+/*          Segundo carrusel     */
+
+.seccionCarrusel{
+    opacity: 100%;
+    max-height: 500px;
+    
+   margin: 25px;
+
+}
+.tamañoDefotosEnCarrusel{
+     opacity: 100%;
+     max-height: 500px;
+     
+     margin: auto;
+}
 
 /*           media queries  + keyframes     */
 
